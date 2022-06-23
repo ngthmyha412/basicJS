@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHU VI & DIEN TICH</title>
+    <script src="js/dientich.js"></script>
+    <link rel="stylesheet" href="css/dientich.css">
+</head>
+<body translate="no">
+    <div class="container-fluid">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'square')">Hình vuông</button>
+            <button class="tablinks" onclick="openCity(event, 'circle')">Hình tròn</button>
+            <button class="tablinks" onclick="openCity(event, 'triangle')">Hình tam giác</button>
+            <button class="tablinks" onclick="openCity(event, 'trapezoid')">Hình thang</button>
+        </div>
+        <div class="tab-content">
+            <div id="square" class="tab-pane fade">
+                <h3>Hình vuông</h3>
+                <form name ="square-form" class="form-group content-form">
+                    <input type="text" name="square-edge" id="square-edge" placeholder="Cạnh Hình Vuông" class="form-control">
+                    <p id="square-err"></p>
+                    <input type="button" value="Kết quả" onclick="square()">
+                    <p id="square-perimeter"></p>
+                    <p id="square-area"></p>
+                </form>
+            </div>
+
+            <div id="circle" class="tab-pane fade">
+                <h3>Hình tròn</h3>
+                <form name ="circle-form" class="form-group content-form">
+                    <input type="text" name="circle-radius" id="circle-radius" placeholder="Bán kính" class="form-control">
+                    <p id="circle-err"></p>
+                    <input type="button" value="Kết quả" onclick="circle()">
+                    <p id="circle-perimeter"></p>
+                    <p id="circle-area"></p>
+                </form>
+            </div>
+
+            <div id="triangle" class="tab-pane fade">
+                <h3>Hình tam giác</h3>
+                <form name="triangle-form" class="form-group content-form">
+                    <input type="text" name="edge-a" id="edge-a" placeholder="Cạnh a" class="form-control"><br>
+                    <input type="text" name="edge-b" id="edge-b" placeholder="Cạnh b" class="form-control"><br>
+                    <input type="text" name="edge-c" id="edge-c" placeholder="Cạnh c" class="form-control"><br>
+                    <p></p>
+                    <input type="button" value="Kết quả" onclick="triangle()">
+                    <p id="triangle-perimeter"></p>
+                    <p id="triangle-area"></p>
+                </form>
+            </div>
+
+            <div id="trapezoid" class="tab-pane fade">
+                <h3>Hình thang </h3>
+                <form name ="trapezoid-form" class="form-group content-form">
+                    <input type="text" name="edge-a" id ="edge-a" placeholder="Đáy trên" class="form-control"><br>
+                    <input type="text" name="edge-b" id ="edge-b" placeholder="Đáy dưới" class="form-control"><br>
+                    <input type="text" name="edge-c" id ="edge-c" placeholder="Cạnh bên 1" class="form-control"><br>
+                    <input type="text" name="edge-d" id ="edge-d" placeholder="Cạnh bên 2" class="form-control"><br>
+                    <input type="text" name="edge-h" id ="edge-h" placeholder="Chiều cao" class="form-control"><br>
+                    <p></p>
+                    <input type="button" value="kết quả" onclick="trapezoid()">
+                    <p id="trapezoid-perimeter"></p>
+                    <p id="trapezoid-area"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

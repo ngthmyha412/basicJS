@@ -1,0 +1,50 @@
+body {
+	background-color: aliceblue;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.heading {
+	font-family: 'Poppins', cursive;
+	margin: 35px auto 20px;
+    color: rgb(17, 79, 126);
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.main {
+	width: 50vw;
+	margin: auto;
+	border-radius: 5px;
+	color: rgb(7, 52, 97);
+	font-family: 'Poppins', cursive;
+}
+
+label {
+	font-size: 20px;
+}
+
+.btn {
+	width: 200px;
+}
+
+#finalAmount h2 {
+	font-size: 50px;
+}
+
+@media (max-width: 768px) {
+	.main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.heading {
+		font-size: 40px;
+	}
+	#finalAmount h2, .finalValue {
+		font-size: 40px;
+	}
+}
